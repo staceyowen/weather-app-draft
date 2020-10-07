@@ -4,10 +4,159 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-    👋🏼👩🏻‍💻
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script
+      src="https://kit.fontawesome.com/5d9c7dbd2e.js"
+      crossorigin="anonymous"
+    ></script>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+
+<div class="form-row">
+    <form class="searchbar" id="search-form">
+        <input 
+        type="text" 
+        placeholder="Search for a city" 
+        autocomplete="off" 
+        autofocus="on" 
+        id="citysearch" 
+        />
+
+        <input 
+        type="submit" 
+        value="search" 
+        />
+    </form>
+
+    <form id="search-form">
+        <button 
+        class="current-location" 
+        id="current-location">
+            Current Location
+        </button>
+
+    </form>
+
+    </div>
+    
+    <br />
+    <div class="container">
+        <div class="card">
+    
+            <img src="img/undraw_among_nature.png" alt="among nature" class="mainimage">
+    
+            <span>
+                <div class="row">
+                    <div class="col-4">
+                        <img class="mainweather" src="img/image 3 sept.png" alt="sunny" />
+                    </div>
+    
+                    <div class="col-8">
+                        <h1>
+                            <span class=temp id="temp"></span> <span id="city"></span>
+                        </h1>
+                        <h2 id="current-date">
+                        </h2>
+                        
+                        <h3 id="current-time">
+                        </h3>
+    
+                        <div class="row">
+                            <div class="col-8 description" id="description">
+    
+                            </div>
+                            <div class="col-6 fc" id="fahrenheit">
+                                <a href="#">(F)</a>
+                            </div>
+                        </div>
+                        </p>
+    
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="img/sunrise.png" alt="sunrise" />
+                            </div>
+    
+                            <div class="col-3 time">
+                                06:17
+                            </div>
+    
+                            <div class="col-3">
+                                <img src="img/sunset.png" alt="sunset" />
+                            </div>
+    
+                            <div class="col-3 time">
+                                19:41
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </span>
+    
+            <p></p>
+    
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="img/image 4 sept.png" alt="lightning" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="img/image 5 sept.png" alt="sun" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="img/image 6 sept.png" alt="rain" />
+                    </div>
+                    <div class="col-sm-3">
+                        <img src="img/image 7 sept.png" alt="sun with clouds" />
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-sm-3">
+                        Fri 4th Sept
+                    </div>
+                    <div class="col-sm-3">
+                        Sat 5th Sept
+                    </div>
+                    <div class="col-sm-3">
+                        Sun 6th Sept
+                    </div>
+                    <div class="col-sm-3">
+                        Mon 7th Sept
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-sm-3">
+                        18c
+                    </div>
+                    <div class="col-sm-3">
+                        24c
+                    </div>
+                    <div class="col-sm-3">
+                        14c
+                    </div>
+                    <div class="col-sm-3">
+                        16c
+                    </div>
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,0 +1,99 @@
+body {
+  font-family: sans-serif;
+  padding: 0 20px;
+}
+
+.searchbar {
+  position: absolute;
+  margin: 15px 10px 20px 80px;
+}
+
+.current-location {
+  position: absolute;
+  margin: 50px 0px 0px 123px;
+}
+
+.card {
+  background-image: #f5f7fa;
+  max-width: 600px;
+  padding: 10px 10px 10px 10px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+.mainimage {
+  display: block;
+  margin: 0 auto;
+  margin-top: 0px;
+  padding: 0px 20px;
+  width: 300px;
+}
+
+span {
+  padding: 10px 10px 10px 10px;
+}
+
+.mainweather {
+  display: block;
+  margin: 0 auto;
+  margin-top: 5px;
+  padding: 23px 20px;
+  width: 200px;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #257bca;
+  padding: 10px 10px 10px 30px;
+  text-align: left;
+}
+
+h1 {
+  color: #e94363;
+  font-weight: 800;
+}
+
+h2 {
+  font-size: medium;
+}
+
+h3 {
+  font-size: medium;
+}
+
+.temp {
+  padding: 0px;
+}
+
+.description {
+  text-align: left;
+  padding: 0px 0px 0px 46px;
+}
+
+.fc {
+  text-align: left;
+  padding-left: 45px;
+}
+
+.sunset,
+.sunrise {
+  text-align: left;
+}
+
+.time {
+  color: #e94363;
+  line-height: 3;
+  text-align: left;
+  padding: 0;
+}
+
+.row {
+  text-align: center;
+  color: #257bca;
+}
+
+.col-sm-3 {
+  line-height: 1.5;
+}
